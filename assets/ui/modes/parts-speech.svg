@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#21184a"/><stop offset="1" stop-color="#0c1029"/></linearGradient><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".4"/></filter></defs>
+  <rect width="256" height="256" rx="56" fill="url(#bg)"/>
+  <g filter="url(#s)" font-family="Arial Black,Arial,sans-serif" font-weight="900" text-anchor="middle">
+    <rect x="31" y="34" width="90" height="68" rx="18" fill="#ef4b4b"/><text x="76" y="79" font-size="35" fill="white">N</text>
+    <rect x="135" y="34" width="90" height="68" rx="18" fill="#3f7cff"/><text x="180" y="79" font-size="35" fill="white">PRO</text>
+    <rect x="31" y="112" width="90" height="68" rx="18" fill="#23b86c"/><text x="76" y="157" font-size="35" fill="white">V</text>
+    <rect x="135" y="112" width="90" height="68" rx="18" fill="#9a57d7"/><text x="180" y="157" font-size="27" fill="white">ADJ</text>
+    <rect x="56" y="192" width="144" height="32" rx="16" fill="#ffd557"/><text x="128" y="215" font-size="16" fill="#21184a">8 PARTS</text>
+  </g>
+</svg>

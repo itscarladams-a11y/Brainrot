@@ -1,0 +1,54 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-apk:
+    name: Test and build debug APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools platforms;android-36 build-tools;36.0.0'
+
+      - name: Install JavaScript dependencies
+        run: npm ci
+
+      - name: Run Brainrot Academy tests
+        run: npm test
+
+      - name: Build Android APK
+        run: npm run android:build
+
+      - name: Upload APK artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Brainrot-Academy-v0.16.9-APK
+          path: |
+            artifacts/Brainrot_Academy_v0.16.9-debug.apk
+            artifacts/Brainrot_Academy_v0.16.9-debug.sha256.txt
+          if-no-files-found: error
+          retention-days: 30

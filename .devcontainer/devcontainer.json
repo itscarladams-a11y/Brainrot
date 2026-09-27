@@ -1,0 +1,10 @@
+{
+  "name": "Brainrot Academy Android",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21"
+    }
+  },
+  "postCreateCommand": "npm ci && bash scripts/setup-codespaces-android.sh"
+}

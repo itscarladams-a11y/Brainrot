@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="t d">
+<title id="t">Glorp's Robot Rescue</title><desc id="d">A friendly academy robot with a glowing battery and route arrows.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#28244d"/><stop offset="1" stop-color="#0b0a18"/></linearGradient>
+  <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d8fbff"/><stop offset=".45" stop-color="#74d9e8"/><stop offset="1" stop-color="#3276a2"/></linearGradient>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff29a"/><stop offset="1" stop-color="#ffad32"/></linearGradient>
+  <filter id="glow"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect x="4" y="4" width="120" height="120" rx="30" fill="url(#bg)" stroke="#8feee6" stroke-width="3"/>
+<path d="M19 98h20V77h20V58h20V38h27" fill="none" stroke="#6ce3d7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".28"/>
+<path d="M98 29l10 9-10 9" fill="none" stroke="#7af4e8" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(27 27)">
+  <path d="M37 4v10" stroke="#ffd663" stroke-width="4" stroke-linecap="round"/><circle cx="37" cy="3" r="5" fill="#ffd663" filter="url(#glow)"/>
+  <rect x="9" y="14" width="58" height="45" rx="14" fill="url(#metal)" stroke="#e9ffff" stroke-width="2.5"/>
+  <rect x="17" y="22" width="42" height="25" rx="9" fill="#12172c" stroke="#80dbe7" stroke-width="2"/>
+  <circle cx="29" cy="34" r="5" fill="#a9fff3" filter="url(#glow)"/><circle cx="48" cy="34" r="5" fill="#a9fff3" filter="url(#glow)"/>
+  <path d="M27 47c6 5 16 5 22 0" fill="none" stroke="#71d9e5" stroke-width="3" stroke-linecap="round"/>
+  <rect x="18" y="57" width="39" height="29" rx="9" fill="#506a90" stroke="#b5f4ff" stroke-width="2.5"/>
+  <rect x="26" y="64" width="23" height="14" rx="4" fill="#101827" stroke="#ffd75e" stroke-width="2"/>
+  <rect x="30" y="67" width="14" height="8" rx="2" fill="url(#gold)" filter="url(#glow)"/>
+  <path d="M18 66H8M57 66h10M27 86v9M48 86v9" stroke="#8ac9d9" stroke-width="6" stroke-linecap="round"/>
+</g>
+</svg>

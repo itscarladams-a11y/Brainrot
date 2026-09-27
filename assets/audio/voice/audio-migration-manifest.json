@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 3,
+  "build": "0.14.0",
+  "canonicalCharacters": {
+    "professor": "speech-bubble-only",
+    "glorp": "Grungle"
+  },
+  "professorMode": "speech-bubbles-no-voice",
+  "spellingMode": "visual-four-choice-no-pronunciation",
+  "retiredLegacySpellingCount": 153,
+  "legacyGlorpCount": 10,
+  "productionGlorpBatchCount": 12,
+  "professorReferenceArchive": "assets/audio/reference/professor-option1-necessary.mp3",
+  "spellingAudioRequired": false,
+  "items": [
+    {
+      "path": "assets/audio/voice/game-cheating.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 24702
+    },
+    {
+      "path": "assets/audio/voice/glorp-wins.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 40167
+    },
+    {
+      "path": "assets/audio/voice/grandpas-wifi.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 23866
+    },
+    {
+      "path": "assets/audio/voice/hotdog.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 17179
+    },
+    {
+      "path": "assets/audio/voice/math-broken.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 21776
+    },
+    {
+      "path": "assets/audio/voice/potato.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 16761
+    },
+    {
+      "path": "assets/audio/voice/question-rigged.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 28464
+    },
+    {
+      "path": "assets/audio/voice/stop-knowing-math.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 24702
+    },
+    {
+      "path": "assets/audio/voice/watch-videos.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 33897
+    },
+    {
+      "path": "assets/audio/voice/what-no.mp3",
+      "category": "glorp-legacy",
+      "migrationStatus": "fallback-only",
+      "bytes": 25120
+    }
+  ]
+}

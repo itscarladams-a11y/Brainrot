@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Pattern Lab">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#302062"/><stop offset="1" stop-color="#101b42"/></linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#8df8ff"/><stop offset="1" stop-color="#4e79ff"/></linearGradient>
+  </defs>
+  <rect x="5" y="5" width="118" height="118" rx="28" fill="url(#bg)" stroke="#ffffff" stroke-opacity=".16" stroke-width="4"/>
+  <path d="M45 25h38M53 25v26L35 88c-6 13 3 23 18 23h22c15 0 24-10 18-23L75 51V25" fill="none" stroke="#f3eeff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M43 83c10-7 16 5 26-2s16 4 23-1l4 10c3 8-3 14-13 14H49c-10 0-16-6-12-14z" fill="url(#tube)"/>
+  <circle cx="50" cy="73" r="6" fill="#ffd85a"/><circle cx="64" cy="67" r="6" fill="#ff79b0"/><circle cx="78" cy="73" r="6" fill="#7dff9f"/>
+  <path d="M27 38h9M92 38h9M23 57h12M94 57h11" stroke="#ffd85a" stroke-width="5" stroke-linecap="round"/>
+</svg>

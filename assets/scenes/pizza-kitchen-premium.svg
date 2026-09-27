@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+<defs>
+ <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#5a2018"/><stop offset=".55" stop-color="#30131b"/><stop offset="1" stop-color="#160b16"/></linearGradient>
+ <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#884d2b"/><stop offset="1" stop-color="#3d211c"/></linearGradient>
+ <radialGradient id="ovenGlow"><stop stop-color="#ffd269"/><stop offset=".38" stop-color="#ff7a23" stop-opacity=".95"/><stop offset="1" stop-color="#7b1d11" stop-opacity="0"/></radialGradient>
+ <linearGradient id="steel"><stop stop-color="#d5d9dd"/><stop offset=".45" stop-color="#6d7680"/><stop offset="1" stop-color="#2e3339"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1200" height="800" fill="url(#wall)"/>
+<g opacity=".16" fill="#ffdca0"><path d="M0 110h1200v10H0zM0 260h1200v10H0zM0 410h1200v10H0z"/><path d="M180 0h10v470h-10zM420 0h10v470h-10zM660 0h10v470h-10zM900 0h10v470h-10z"/></g>
+<ellipse cx="825" cy="340" rx="270" ry="245" fill="url(#ovenGlow)" filter="url(#blur)" opacity=".72"/>
+<g transform="translate(750 135)">
+ <rect x="0" y="0" width="330" height="360" rx="42" fill="#211a1c" stroke="#efb565" stroke-width="8"/>
+ <rect x="35" y="72" width="260" height="215" rx="28" fill="#10090a" stroke="url(#steel)" stroke-width="13"/>
+ <ellipse cx="165" cy="180" rx="105" ry="78" fill="#ff7e2a" opacity=".28"/>
+ <path d="M95 232c34-67 47-108 72-132 35 44 50 92 71 132-37-18-103-18-143 0z" fill="#ff9b27" opacity=".55"/>
+ <circle cx="75" cy="36" r="13" fill="#7eff69"/><circle cx="120" cy="36" r="13" fill="#ffcf4c"/><circle cx="165" cy="36" r="13" fill="#ff685e"/>
+ <rect x="72" y="316" width="186" height="18" rx="9" fill="url(#steel)"/>
+</g>
+<g transform="translate(70 80)">
+ <rect width="260" height="175" rx="26" fill="#171018" stroke="#ffc96d" stroke-width="6"/>
+ <rect x="20" y="20" width="220" height="96" rx="15" fill="#4c1d1b"/>
+ <text x="130" y="58" text-anchor="middle" fill="#fff3d2" font-family="Arial,sans-serif" font-size="25" font-weight="900">GLORP'S</text>
+ <text x="130" y="91" text-anchor="middle" fill="#ffca54" font-family="Arial,sans-serif" font-size="30" font-weight="900">PIZZA LAB</text>
+ <path d="M42 143h176" stroke="#ffca54" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g opacity=".9">
+ <rect y="500" width="1200" height="300" fill="url(#counter)"/>
+ <rect y="500" width="1200" height="25" fill="#c87a42"/>
+ <g transform="translate(90 520)"><rect width="150" height="76" rx="18" fill="#1c1113"/><circle cx="40" cy="38" r="23" fill="#d83c37"/><circle cx="82" cy="38" r="23" fill="#62a947"/><circle cx="123" cy="38" r="23" fill="#f0c94f"/></g>
+ <g transform="translate(275 535)" fill="none" stroke="#d7a166" stroke-width="10"><path d="M0 75c30-80 90-80 120 0"/><path d="M145 75c30-80 90-80 120 0"/></g>
+</g>
+<g fill="#ffd884" opacity=".8"><circle cx="560" cy="95" r="7"/><circle cx="610" cy="160" r="4"/><circle cx="1095" cy="90" r="5"/><circle cx="520" cy="310" r="6"/></g>
+</svg>

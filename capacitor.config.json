@@ -1,0 +1,8 @@
+{
+  "appId": "com.brainrotacademy.app",
+  "appName": "Brainrot Academy",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}

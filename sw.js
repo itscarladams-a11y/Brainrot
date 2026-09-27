@@ -1,0 +1,160 @@
+const CACHE='brainrot-academy-v0.16.9';
+const ASSETS=[
+  './',
+  './index.html',
+  './assets/audio/sfx/button-pop.mp3',
+  './assets/audio/sfx/chalk-tap.mp3',
+  './assets/audio/sfx/correct-chime.mp3',
+  './assets/audio/sfx/glorp-growl-2.mp3',
+  './assets/audio/sfx/glorp-growl.mp3',
+  './assets/audio/sfx/glorp-laugh-2.mp3',
+  './assets/audio/sfx/glorp-laugh.mp3',
+  './assets/audio/sfx/grade-stamp.mp3',
+  './assets/audio/sfx/page-flip.mp3',
+  './assets/audio/sfx/phone-ping.mp3',
+  './assets/audio/sfx/rage-hit-2.mp3',
+  './assets/audio/sfx/rage-hit.mp3',
+  './assets/audio/sfx/slime-splat-2.mp3',
+  './assets/audio/sfx/slime-splat.mp3',
+  './assets/audio/sfx/sparkle-pop.mp3',
+  './assets/audio/sfx/robot-step.wav',
+  './assets/audio/sfx/robot-turn.wav',
+  './assets/audio/sfx/robot-charge.wav',
+  './assets/audio/sfx/robot-crash.wav',
+  './assets/audio/sfx/ui-whoosh.mp3',
+  './assets/audio/sfx/unlock.mp3',
+  './assets/audio/sfx/wrong-buzz.mp3',
+  './assets/audio/voice/game-cheating.mp3',
+  './assets/audio/voice/glorp-wins.mp3',
+  './assets/audio/voice/grandpas-wifi.mp3',
+  './assets/audio/voice/hotdog.mp3',
+  './assets/audio/voice/math-broken.mp3',
+  './assets/audio/voice/potato.mp3',
+  './assets/audio/voice/question-rigged.mp3',
+  './assets/audio/voice/stop-knowing-math.mp3',
+  './assets/audio/voice/watch-videos.mp3',
+  './assets/audio/voice/what-no.mp3',
+  './assets/audio/voice/audio-migration-manifest.json',
+  './assets/audio/voice/professor-batch-queue.json',
+  './assets/glorp-room-v03.webp',
+  './assets/glorp-stage.webp',
+  './assets/glorp.png',
+  './assets/favicon-32.png',
+  './assets/icon-180.png',
+  './assets/icon-192.png',
+  './assets/icon-512.png',
+  './assets/icon-maskable-512.png',
+  './assets/brand/professor-brainrot-hero.webp',
+  './assets/brand/bantam-entertainment-logo.png',
+  './assets/music/battle.mp3',
+  './assets/music/menu.mp3',
+  './assets/music/professor.mp3',
+  './assets/music/review.mp3',
+  './assets/music/win.mp3',
+  './assets/rig/base.webp',
+  './assets/rig/eye-left.webp',
+  './assets/rig/eye-right.webp',
+  './assets/rig/mouth.webp',
+  './assets/rig/phone.webp',
+  './assets/rig/gesture-fist.svg',
+  './assets/rig/gesture-point.svg',
+  './assets/rig/prof-hand-pointer.svg',
+  './assets/ui/nav/back.svg',
+  './assets/ui/nav/brain.svg',
+  './assets/ui/nav/check.svg',
+  './assets/ui/nav/closet.svg',
+  './assets/ui/nav/grade.svg',
+  './assets/ui/nav/home.svg',
+  './assets/ui/nav/lock.svg',
+  './assets/ui/nav/parent.svg',
+  './assets/ui/nav/pause.svg',
+  './assets/ui/nav/play.svg',
+  './assets/ui/nav/quiz.svg',
+  './assets/ui/nav/rage.svg',
+  './assets/ui/nav/review.svg',
+  './assets/scenes/glorp-room-v05.svg',
+  './assets/scenes/glorp-room-v05.webp',
+  './assets/scenes/professor-study-v05.svg',
+  './assets/scenes/professor-study-v05.webp',
+  './assets/scenes/activity-hall-premium.svg',
+  './assets/scenes/pizza-kitchen-premium.svg',
+  './assets/scenes/milkshake-lab-premium.svg',
+  './assets/ui/modes/brain-battle.svg',
+  './assets/ui/modes/pizza-party.svg',
+  './assets/ui/modes/milkshake.svg',
+  './assets/ui/modes/logic-lab.svg',
+  './assets/ui/modes/pattern-lab.svg',
+  './assets/ui/modes/shape-lab.svg',
+  './assets/ui/modes/robot-rescue.svg',
+  './assets/ui/modes/slime-sweeper.svg',
+  './assets/ui/modes/parts-speech.svg',
+  './assets/ui/brainrot-academy-logo.svg',
+  './assets/ui/cosmetic-chef.svg',
+  './assets/ui/cosmetic-cowboy.svg',
+  './assets/ui/cosmetic-pirate.svg',
+  './assets/ui/cosmetic-propeller.svg',
+  './assets/ui/cosmetic-sunglasses.svg',
+  './assets/ui/subject-calendar.svg',
+  './assets/ui/subject-general.svg',
+  './assets/ui/subject-geography.svg',
+  './assets/ui/subject-grammar.svg',
+  './assets/ui/subject-math.svg',
+  './assets/ui/subject-mixed.svg',
+  './assets/ui/subject-reading.svg',
+  './assets/ui/subject-science.svg',
+  './assets/ui/subject-spelling.svg',
+  './assets/ui/subject-time.svg',
+  './assets/ui/subject-vocabulary.svg',
+  './js/app.js',
+  './js/boot.js',
+  './js/voice-registry.js',
+  './js/audio.js',
+  './js/content.js',
+  './js/curriculum.js',
+  './js/content-depth.js',
+  './js/engine.js',
+  './js/progress.js',
+  './js/skills.js',
+  './js/mastery.js',
+  './js/adaptive.js',
+  './js/gameplay-settings.js',
+  './js/combat.js',
+  './js/interactions.js',
+  './js/difficulty.js',
+  './js/pdf-report.js',
+  './js/logic-lab.js',
+  './js/pattern-lab.js',
+  './js/shape-lab.js',
+  './js/robot-rescue.js',
+  './js/slime-sweeper.js',
+  './js/parts-of-speech.js',
+  './manifest.webmanifest',
+  './styles.css'
+];
+self.addEventListener('install',event=>{
+  event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()));
+});
+self.addEventListener('activate',event=>{
+  event.waitUntil(caches.keys()
+    .then(keys=>Promise.all(keys.filter(key=>key.startsWith('brainrot-academy-v')&&key!==CACHE).map(key=>caches.delete(key))))
+    .then(()=>self.clients.claim()));
+});
+self.addEventListener('fetch',event=>{
+  const request=event.request;
+  if(request.method!=='GET')return;
+  const url=new URL(request.url),scope=new URL(self.registration.scope);
+  if(url.origin!==self.location.origin||!url.pathname.startsWith(scope.pathname))return;
+
+  if(request.mode==='navigate'){
+    event.respondWith(fetch(request).then(response=>{
+      if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put('./index.html',copy)));}
+      return response;
+    }).catch(()=>caches.match('./index.html').then(page=>page||Response.error())));
+    return;
+  }
+
+  event.respondWith(caches.match(request).then(cached=>cached||fetch(request).then(response=>{
+    if(response.ok&&response.status===200){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(request,copy)));}
+    return response;
+  })));
+});

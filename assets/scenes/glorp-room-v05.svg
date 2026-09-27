@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs>
+ <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1a1038"/><stop offset=".55" stop-color="#25154c"/><stop offset="1" stop-color="#0c1731"/></linearGradient>
+ <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#16102d"/><stop offset="1" stop-color="#090714"/></linearGradient>
+ <linearGradient id="desk" x1="0" x2="1"><stop stop-color="#422a55"/><stop offset=".55" stop-color="#21152d"/><stop offset="1" stop-color="#4b2a58"/></linearGradient>
+ <radialGradient id="greenGlow"><stop stop-color="#b8ff63" stop-opacity=".55"/><stop offset="1" stop-color="#64ff45" stop-opacity="0"/></radialGradient>
+ <radialGradient id="violetGlow"><stop stop-color="#b06cff" stop-opacity=".48"/><stop offset="1" stop-color="#8e51ff" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="30"/></filter><filter id="shadow"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#wall)"/>
+<circle cx="1240" cy="220" r="420" fill="url(#violetGlow)" filter="url(#blur)"/><circle cx="380" cy="540" r="360" fill="url(#greenGlow)" filter="url(#blur)"/>
+<!-- wall panels -->
+<path d="M0 0h1600v530H0z" fill="none" stroke="#ffffff0a" stroke-width="4"/><path d="M620 0v530M1160 0v530" stroke="#ffffff08" stroke-width="3"/>
+<!-- window -->
+<g filter="url(#shadow)"><rect x="1090" y="70" width="360" height="250" rx="24" fill="#10102b" stroke="#8265d8" stroke-width="6"/><rect x="1114" y="94" width="312" height="202" rx="14" fill="#0b1b35"/><circle cx="1340" cy="145" r="36" fill="#e7e0ff"/><circle cx="1356" cy="138" r="36" fill="#0b1b35"/><path d="M1114 250C1200 205 1270 280 1426 190V296H1114z" fill="#1b2f49"/><circle cx="1172" cy="150" r="3" fill="#fff"/><circle cx="1260" cy="120" r="2" fill="#fff"/><circle cx="1390" cy="225" r="2" fill="#fff"/></g>
+<!-- shelves -->
+<g filter="url(#shadow)"><rect x="84" y="80" width="410" height="250" rx="22" fill="#171027" stroke="#5e3a78" stroke-width="5"/><path d="M84 162h410M84 245h410" stroke="#5e3a78" stroke-width="5"/><g fill="#d96af8"><rect x="115" y="110" width="62" height="32" rx="8"/><rect x="370" y="188" width="92" height="28" rx="8"/></g><g fill="#8df23d"><rect x="202" y="105" width="36" height="40" rx="8"/><rect x="262" y="188" width="70" height="28" rx="8"/></g><g fill="#f5c34d"><rect x="115" y="270" width="72" height="28" rx="8"/><rect x="222" y="266" width="40" height="34" rx="8"/></g></g>
+<!-- neon sign -->
+<g filter="url(#shadow)"><rect x="565" y="80" width="390" height="136" rx="28" fill="#120d26" stroke="#ffffff18" stroke-width="4"/><path d="M628 151h266" stroke="#8bff44" stroke-width="18" stroke-linecap="round"/><path d="M628 151h266" stroke="#ecffd9" stroke-width="5" stroke-linecap="round"/><circle cx="609" cy="151" r="9" fill="#8bff44"/><circle cx="912" cy="151" r="9" fill="#8bff44"/></g>
+<!-- desk and monitors -->
+<g filter="url(#shadow)"><path d="M850 425h690l-55 280H790z" fill="url(#desk)"/><rect x="987" y="315" width="360" height="214" rx="24" fill="#11111d" stroke="#5c4c86" stroke-width="7"/><rect x="1011" y="340" width="312" height="164" rx="12" fill="#102844"/><rect x="1040" y="372" width="254" height="10" rx="5" fill="#80ff48" opacity=".7"/><rect x="1040" y="399" width="160" height="10" rx="5" fill="#a06dff" opacity=".7"/><circle cx="1260" cy="458" r="25" fill="#7fff4a" opacity=".7"/><rect x="1138" y="528" width="60" height="26" rx="6" fill="#2a203e"/><path d="M1168 528v-24" stroke="#51436b" stroke-width="10"/></g>
+<!-- keyboard/controller/snacks -->
+<g filter="url(#shadow)"><rect x="1045" y="610" width="230" height="55" rx="13" fill="#19172a" stroke="#6e58a1" stroke-width="4"/><g fill="#65527e"><rect x="1065" y="627" width="22" height="13" rx="3"/><rect x="1095" y="627" width="22" height="13" rx="3"/><rect x="1125" y="627" width="22" height="13" rx="3"/></g><path d="M1330 585c56-20 126 24 122 74-3 39-41 50-63 28-19 20-58 14-63-17-4-22 2-55 4-85z" fill="#171726" stroke="#8e72bc" stroke-width="5"/><circle cx="1360" cy="630" r="9" fill="#7cff43"/><circle cx="1415" cy="633" r="9" fill="#c96cff"/><path d="M1367 666h38" stroke="#8e72bc" stroke-width="7" stroke-linecap="round"/></g>
+<g filter="url(#shadow)"><path d="M905 600l70 15-18 92-70-15z" fill="#f3bc34"/><path d="M918 620l40 8" stroke="#7d4e21" stroke-width="7"/><rect x="1480" y="565" width="46" height="110" rx="18" fill="#9b53e1"/><rect x="1489" y="548" width="28" height="28" rx="8" fill="#d8b6ff"/></g>
+<!-- floor -->
+<path d="M0 530h1600v370H0z" fill="url(#floor)"/><path d="M800 530L650 900M800 530L950 900M800 530L1200 900M800 530L400 900" stroke="#ffffff08" stroke-width="3"/><path d="M0 700h1600M0 820h1600" stroke="#ffffff08" stroke-width="3"/>
+<!-- chair -->
+<g opacity=".92" filter="url(#shadow)"><path d="M510 500c80-80 232-38 244 79l10 118c8 95-142 128-220 67-42-33-60-212-34-264z" fill="#1b1a2b" stroke="#724f9e" stroke-width="7"/><path d="M555 520c52-42 135-25 158 38" fill="none" stroke="#372b4b" stroke-width="20" stroke-linecap="round"/></g>
+<!-- slime drips -->
+<g fill="#7cff36" opacity=".75"><path d="M182 330c32 0 46 18 46 44 0 24-14 43-28 43-15 0-18-14-18-28 0-19-5-25-23-25-10 0-18-8-18-17 0-10 11-17 41-17z"/><circle cx="238" cy="392" r="9"/><path d="M1492 318c18 0 30 14 30 32 0 19-11 36-24 36-11 0-12-13-12-21 0-13-5-18-16-18-8 0-13-6-13-13 0-9 8-16 35-16z"/></g>
+<!-- foreground vignette -->
+<rect width="1600" height="900" fill="none" stroke="#05040b" stroke-opacity=".38" stroke-width="90"/>
+</svg>
